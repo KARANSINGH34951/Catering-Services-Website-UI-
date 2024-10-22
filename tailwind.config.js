@@ -6,7 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      
       keyframes: {
         bounceInUp: {
           '0%, 60%, 75%, 90%, 100%': {
@@ -22,8 +21,9 @@ export default {
       },
     },
     fontFamily: {
-      'Playball': ['"Playball", cursive'], // Custom font
+      'Playball': ['"Playball", cursive'], 
+      'Open Sans': ['"Open Sans", sans-serif'], 
     },
   },
   plugins: [],
-}
+};

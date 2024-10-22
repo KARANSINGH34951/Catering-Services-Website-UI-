@@ -38,12 +38,12 @@ const Navbar = () => {
               isOpen ? 'translate-x-0' : '-translate-x-full'
             } md:hidden`}>
 
-            <a href="index.html" className="block px-4 py-2 text-[#d4a762]">Home</a>
-            <a href="about.html" className="block px-4 py-2 text-black">About</a>
-            <a href="service.html" className="block px-4 py-2 text-black">Services</a>
-            <a href="event.html" className="block px-4 py-2 text-black">Events</a>
-            <a href="menu.html" className="block px-4 py-2 text-black">Menu</a>
-            <a href="contact.html" className="block px-4 py-2 text-black">Contact</a>
+            <a href="index.html" className="block px-4 py-2 text-[#d4a762] font-Open Sans">Home</a>
+            <a href="about.html" className="block px-4 py-2 text-black font-Open Sans">About</a>
+            <a href="service.html" className="block px-4 py-2 text-black font-Open Sans">Services</a>
+            <a href="event.html" className="block px-4 py-2 text-black font-Open Sans">Events</a>
+            <a href="menu.html" className="block px-4 py-2 text-black font-Open Sans">Menu</a>
+            <a href="contact.html" className="block px-4 py-2 text-black font-Open Sans">Contact</a>
 
             <div className="relative">
               <button onClick={toggleDropdown} className="block px-4 py-2 text-black">
@@ -53,8 +53,8 @@ const Navbar = () => {
                 </svg>
               </button>
               {dropdownOpen && (
-                <div className="ml-4 mt-1 bg-white shadow-md rounded-md">
-                  <a href="book.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Booking</a>
+                <div className="ml-4 mt-1 bg-white  shadow-md rounded-md">
+                  <a href="book.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-Open Sans">Booking</a>
                   <a href="blog.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Our Blog</a>
                   <a href="team.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Our Team</a>
                   <a href="testimonial.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Testimonial</a>
@@ -100,7 +100,7 @@ const Navbar = () => {
             <button className="text-black bg-[#d4a762] h-12 w-12 rounded-full ">
               <FontAwesomeIcon icon={faSearch} />
             </button>
-            <a href="book.html" className="text-lg py-3 px-5 rounded-full bg-primary text-black bg-[#d4a762]">Book Now</a>
+            <a href="book.html" className="text-lg py-3 px-4 rounded-full bg-primary text-black bg-[#d4a762]">Book Now</a>
           </div>
         </nav>
       </div>
