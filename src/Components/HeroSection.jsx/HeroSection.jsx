@@ -42,19 +42,19 @@ const HeroSection = () => {
   return (
     <div
       ref={containerRef}
-      className='grid grid-cols-1 md:grid-cols-2 mt-10 mx-4 sm:mx-8 md:mx-8 lg:mx-16 xl:mx-16 md:my-10 lg:my-12 w-full my-5'
+      className='grid grid-cols-1 md:grid-cols-2 mt-10 mx-4 sm:mx-8 md:mx-8 lg:mx-10 xl:mx-10 md:my-5 lg:my-5 w-full my-5 items-center justify-center'
     >
-      <div className='flex flex-col items-center space-y-6 justify-center md:pr-5 my-5 md:mt-10 lg:mt-10 xl:mt-10'>
+      <div className='flex flex-col items-center space-y-6 justify-center text-center md:pr-5 md:mt-6 lg:mt-4 xl:mt-4'>
         
         <h2 className="inline-block hero-text border-2 border-orange-500 py-1 rounded-full px-4 text-center mx-auto">
         WELCOME TO CATERSERV
         </h2>
 
-        <h1 className='hero-text leading-tight font-bold text-4xl md:text-5xl lg:text-6xl xl:text-8xl'>
+        <h1 className='hero-text leading-tight font-bold text-4xl md:text-5xl lg:text-6xl xl:text-6xl'>
           Book CaterServ For <br /> Your Dream Event
         </h1>
 
-        <div className='flex gap-4 mt-5'>
+        <div className='flex gap-4 mt-5 justify-center'>
           <button className='rounded-full px-6 py-3 lg:px-8 lg:py-4 bg-stone-800 text-white hover:bg-stone-700 transition duration-300'>
             Book Now
           </button>
