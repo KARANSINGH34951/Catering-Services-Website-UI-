@@ -11,6 +11,8 @@ import Footer from '../Components/Footer/Footer'
 import Blogs from '../Components/Blogs/Blogs'
 import Menu from '../Components/Menu/Menu'
 import Testimonials from '../Components/Testimonials/Testimonials'
+import Testo from '../Components/Testimonials/testo'
+
 
 const Home = () => {
   return (

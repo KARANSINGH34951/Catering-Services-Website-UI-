@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const MenuItem = ({ image, title, price, description, index }) => {
+const MenuItem = ({ image, title, price, description }) => {
     const menuItemRef = useRef(null);
 
     useEffect(() => {
@@ -12,23 +12,20 @@ const MenuItem = ({ image, title, price, description, index }) => {
 
         gsap.fromTo(
             el,
-            { y: 50, opacity: 0 },
+            { y: 100, opacity: 0 }, 
             {
-                y: 0,
+                y: 0,  
                 opacity: 1,
                 duration: 0.8, 
-                ease: "back.out(1.2)", 
-                stagger: {
-                    amount: 0.3, 
-                },
+                ease: "power3.out", 
                 scrollTrigger: {
                     trigger: el,
-                    start: "top 30%", 
-                    toggleActions: "play none none reverse", 
+                    start: "top 90%",  
+                    toggleActions: "play none none reverse",  
                 },
             }
         );
-    }, [index]); 
+    }, []);
 
     return (
         <div ref={menuItemRef} className="menu-item flex items-center justify-between p-4 rounded-lg">

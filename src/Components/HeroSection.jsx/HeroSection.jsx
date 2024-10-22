@@ -44,13 +44,13 @@ const HeroSection = () => {
       ref={containerRef}
       className='grid grid-cols-1 md:grid-cols-2 mt-10 mx-4 sm:mx-8 md:mx-8 lg:mx-16 xl:mx-16 md:my-10 lg:my-12 w-full my-5'
     >
-      <div className='flex flex-col items-center space-y-4 justify-center md:pr-5 my-5 md:mt-10 lg:mt-10 xl:mt-10'>
+      <div className='flex flex-col items-center space-y-6 justify-center md:pr-5 my-5 md:mt-10 lg:mt-10 xl:mt-10'>
         
         <h2 className="inline-block hero-text border-2 border-orange-500 py-1 rounded-full px-4 text-center mx-auto">
         WELCOME TO CATERSERV
         </h2>
 
-        <h1 className='hero-text leading-tight font-bold text-4xl md:text-6xl lg:text-8xl xl:text-8xl'>
+        <h1 className='hero-text leading-tight font-bold text-4xl md:text-5xl lg:text-6xl xl:text-8xl'>
           Book CaterServ For <br /> Your Dream Event
         </h1>
 

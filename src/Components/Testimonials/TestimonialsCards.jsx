@@ -1,4 +1,3 @@
-// TestimonialCard.js
 import React from "react";
 
 const TestimonialsCards = ({ testimonial }) => {
