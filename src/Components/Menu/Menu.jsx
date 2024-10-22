@@ -65,7 +65,7 @@ const Menu = () => {
   };
 
   const renderMenuItems = (items) => (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mx-10 lg:mx-20">
       {items.map((item, index) => (
         <div className="bg-white p-2 rounded-lg transition-transform transform " key={index}>
           <MenuItem {...item} />

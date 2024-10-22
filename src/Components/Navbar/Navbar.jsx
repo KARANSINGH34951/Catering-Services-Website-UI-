@@ -15,9 +15,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="shadow-sm py-4 md:py-6 lg:py-5 xl:py-5">
+    <div className="shadow-sm py-4 md:py-6 lg:py-3 xl:py-5">
       <div className="container mx-auto">
-        <nav className="flex justify-between items-center py-4 px-6 md:px-5 lg:px-5 xl:px-6">
+        <nav className="flex justify-between items-center py-2 px-6 md:px-5 lg:px-5 xl:px-6">
           
           <a href="index.html" className="text-5xl font-bold text-primary">
             <h1><span className='text-[#d4a762]'>Cater</span><span className="text-black">Serv</span></h1>

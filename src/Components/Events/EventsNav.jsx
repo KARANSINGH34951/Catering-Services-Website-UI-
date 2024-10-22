@@ -81,7 +81,7 @@ const EventsNav = () => {
             onClick={() => handleTabClick('tab-1')}
           >
             <span className="w-32">All Events</span>
-          </a>s
+          </a>
         </li>
        
       </ul>
