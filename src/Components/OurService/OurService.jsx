@@ -31,7 +31,7 @@ const OurService = () => {
 
       <h1 className='text-center text-5xl font-medium text-gray-700 mb-10'>What We Offer?</h1>
       
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 md:px-10 -z-10'>
+      <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-10 -z-10'>
         {services.map((service, index) => (
           <ServiceCard 
             key={index} 

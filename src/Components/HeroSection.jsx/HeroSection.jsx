@@ -6,7 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const sHeroSection = () => {
+const HeroSection = () => {
   const containerRef = useRef(null);
   const imgRef = useRef(null); 
 

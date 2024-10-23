@@ -3,8 +3,45 @@ import CountUp from 'react-countup';
 import img from "./stats-img/people.png"
 import img2 from "./stats-img/expert.png"
 import img3 from "./stats-img/checked.png"
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const StatsSection = () => {
+
+  gsap.fromTo(".statscard", 
+    {scrollTrigger : ".statscard", y: 200, opacity: 0 },
+    {
+      y: 0,  
+      opacity: 1,
+      duration: 0.2, 
+      ease: "power3.out",
+      stagger: 0.2, 
+      scrollTrigger: {
+        trigger: ".statscard",
+        start: "top 90%",  
+        toggleActions: "play none none reverse",
+      },
+  }
+  );
+
+  gsap.fromTo(".youtubecard", 
+    {scrollTrigger : ".youtubecard", y: 200, opacity: 0 },
+    {
+      y: 0,  
+      opacity: 1,
+      duration: 0.2, 
+      ease: "power3.out",
+      stagger: 0.2, 
+      scrollTrigger: {
+        trigger: ".youtubecard",
+        start: "top 90%",  
+        toggleActions: "play none none reverse",
+      },
+  }
+  );
+
   const [inView, setInView] = useState(false);
   const sectionRef = useRef(null);
 
@@ -40,7 +77,7 @@ const StatsSection = () => {
         <div className="col-span-1 md:col-span-3 lg:col-span-3 flex justify-center items-center">
           <div className="flex flex-wrap justify-center gap-6" ref={sectionRef}>
            
-            <div className="h-[250px] w-[230px] bg-[#d4a762] space-y-6 text-black p-6 rounded-lg text-center shadow-md transition-transform transform">
+            <div className="statscard h-[250px] w-[230px] bg-[#d4a762] space-y-6 text-black p-6 rounded-lg text-center shadow-md transition-transform transform">
               <div className='flex justify-center items-center'>
                 <img className='object-cover max-h-20' src={img} alt="" />
               </div>
@@ -50,7 +87,7 @@ const StatsSection = () => {
               <p className="uppercase font-bold text-gray-600 mt-2">Happy Customers</p>
             </div>
 
-            <div className="h-[250px] w-[250px] bg-[#d4a762] space-y-6 text-black p-6 rounded-lg text-center shadow-md transition-transform transform">
+            <div className="statscard h-[250px] w-[250px] bg-[#d4a762] space-y-6 text-black p-6 rounded-lg text-center shadow-md transition-transform transform">
               <div className='flex justify-center items-center'>
                 <img className='object-cover max-h-20' src={img2} alt="" />
               </div>
@@ -60,7 +97,7 @@ const StatsSection = () => {
               <p className="uppercase font-bold text-gray-600 mt-2">Expert Chefs</p>
             </div>
 
-            <div className="h-[250px] w-[250px] bg-[#d4a762] space-y-6 text-black p-6 rounded-lg text-center shadow-md transition-transform transform over:scale-105">
+            <div className="statscard h-[250px] w-[250px] bg-[#d4a762] space-y-6 text-black p-6 rounded-lg text-center shadow-md transition-transform transform over:scale-105">
               <div className='flex justify-center items-center'>
                 <img className='object-cover max-h-20' src={img3} alt="" />
               </div>
@@ -73,7 +110,7 @@ const StatsSection = () => {
         </div>
 
       
-        <div className="col-span-1 md:col-span-2 lg:col-span-2 flex justify-center items-center">
+        <div className="youtubecard col-span-1 md:col-span-2 lg:col-span-2 flex justify-center items-center">
           <div className="rounded-full w-full">
             <iframe
               width="90%"
