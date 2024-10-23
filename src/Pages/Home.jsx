@@ -25,7 +25,7 @@ const Home = () => {
       <Menu/>
       <ContactSection/>
       <OurTeam/>
-      <Testimonials/>
+      <Testimonials/>c
       <Blogs/>
      
       

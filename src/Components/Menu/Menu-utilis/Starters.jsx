@@ -1,7 +1,7 @@
 // Starters.js
 import React from 'react';
 import MenuItem from '../MenuItem';
-import img from "../Menu-img/image.png"; // Adjust the path as necessary
+import img from a // Adjust the path as necessary
 
 const Starters = () => {
     const starters = [
