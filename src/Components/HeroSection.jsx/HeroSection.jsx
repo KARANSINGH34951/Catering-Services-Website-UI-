@@ -50,7 +50,7 @@ const HeroSection = () => {
         WELCOME TO CATERSERV
         </h2>
 
-        <h1 className='hero-text leading-tight font-bold text-4xl md:text-5xl lg:text-6xl xl:text-6xl'>
+        <h1 className='hero-text leading-tight font-bold text-4xl md:text-5xl lg:text-5xl xl:text-6xl'>
           Book CaterServ For <br /> Your Dream Event
         </h1>
 

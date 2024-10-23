@@ -11,11 +11,12 @@ import Footer from '../Components/Footer/Footer'
 import Blogs from '../Components/Blogs/Blogs'
 import Menu from '../Components/Menu/Menu'
 import Testimonials from '../Components/Testimonials/Testimonials'
+import ErrorPage from '../Components/ErrorPage/ErrorPage'
 
 const Home = () => {
   return (
-    <div className='overflow-x-hidden bg-[#fffcf8]'>
-      <Navbar/>
+    <div className='overflow-hidden bg-[#fffcf8]'>
+      
       <HeroSection/>
       <AboutUs/>
       <StatsSection/>
@@ -26,7 +27,7 @@ const Home = () => {
       <OurTeam/>
       <Testimonials/>
       <Blogs/>
-      <Footer/>
+     
       
     </div>
   )

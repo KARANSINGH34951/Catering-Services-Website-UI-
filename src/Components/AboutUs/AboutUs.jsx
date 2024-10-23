@@ -70,15 +70,15 @@ const AboutUs = () => {
 
         <ul className='grid grid-cols-1 md:grid-cols-2 gap-4 px-4 mt-4'>
         
-          <li>Fresh and Fast Food Delivery</li>
-          <li>24/7 Customer Support</li>
-          <li>Easy Customization Options</li>
-          <li>Delicious Deals for Delicious Meals</li>
+          <li>🢅 Fresh and Fast Food Delivery</li>
+          <li>🢅 24/7 Customer Support</li>
+          <li>🢅 Easy Customization Options</li>
+          <li>🢅 Delicious Deals for Delicious Meals</li>
         </ul>
 
         <div>
           <button className='rounded-full px-10 py-4 bg-slate-300 my-6'>
-             About Us
+             About Us 🡺
           </button>
         </div>
       </div>

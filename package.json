@@ -21,6 +21,7 @@
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
     "react-fontawesome": "^1.7.1",
+    "react-router-dom": "^6.27.0",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1"
   },

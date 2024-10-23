@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons'; 
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); 
@@ -19,11 +20,10 @@ const Navbar = () => {
       <div className="container mx-auto">
         <nav className="flex justify-between items-center py-2 px-6 md:px-5 lg:px-5 xl:px-6">
           
-          <a href="index.html" className="text-5xl font-bold text-primary">
+          <Link to="/" className="text-5xl font-bold text-primary">
             <h1><span className='text-[#d4a762]'>Cater</span><span className="text-black">Serv</span></h1>
-          </a>
+          </Link>
 
-         
           <button
             onClick={toggleMenu}
             className="block md:hidden text-primary focus:outline-none"
@@ -33,17 +33,16 @@ const Navbar = () => {
             </svg>
           </button>
 
-         
           <div className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 transition-transform transform ${
               isOpen ? 'translate-x-0' : '-translate-x-full'
             } md:hidden`}>
 
-            <a href="index.html" className="block px-4 py-2 text-[#d4a762] font-Open Sans">Home</a>
-            <a href="about.html" className="block px-4 py-2 text-black font-Open Sans">About</a>
-            <a href="service.html" className="block px-4 py-2 text-black font-Open Sans">Services</a>
-            <a href="event.html" className="block px-4 py-2 text-black font-Open Sans">Events</a>
-            <a href="menu.html" className="block px-4 py-2 text-black font-Open Sans">Menu</a>
-            <a href="contact.html" className="block px-4 py-2 text-black font-Open Sans">Contact</a>
+            <Link to="/" className="block px-4 py-2 text-[#d4a762] font-Open Sans">Home</Link>
+            <Link to="/about" className="block px-4 py-2 text-black font-Open Sans">About</Link>
+            <Link to="/service" className="block px-4 py-2 text-black font-Open Sans">Services</Link>
+            <Link to="/event" className="block px-4 py-2 text-black font-Open Sans">Events</Link>
+            <Link to="/menu" className="block px-4 py-2 text-black font-Open Sans">Menu</Link>
+            <Link to="/contact" className="block px-4 py-2 text-black font-Open Sans">Contact</Link>
 
             <div className="relative">
               <button onClick={toggleDropdown} className="block px-4 py-2 text-black">
@@ -54,24 +53,23 @@ const Navbar = () => {
               </button>
               {dropdownOpen && (
                 <div className="ml-4 mt-1 bg-white  shadow-md rounded-md">
-                  <a href="book.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-Open Sans">Booking</a>
-                  <a href="blog.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Our Blog</a>
-                  <a href="team.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Our Team</a>
-                  <a href="testimonial.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Testimonial</a>
-                  <a href="404.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">404 Page</a>
+                  <Link to="/book" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-Open Sans">Booking</Link>
+                  <Link to="/blog" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Our Blog</Link>
+                  <Link to="/team" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Our Team</Link>
+                  <Link to="/testimonial" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Testimonial</Link>
+                  <Link to="/404" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">404 Page</Link>
                 </div>
               )}
             </div>
           </div>
 
-      
           <div className="hidden md:flex justify-center items-center space-x-6 flex-grow text-lg">
-            <a href="index.html" className="nav-item text-[#d4a762] nav-link">Home</a>
-            <a href="about.html" className="nav-item nav-link">About</a>
-            <a href="service.html" className="nav-item nav-link">Services</a>
-            <a href="event.html" className="nav-item nav-link">Events</a>
-            <a href="menu.html" className="nav-item nav-link">Menu</a>
-            <a href="contact.html" className="nav-item nav-link">Contact</a>
+            <Link to="/" className="nav-item text-[#d4a762] nav-link">Home</Link>
+            <Link to="/about" className="nav-item nav-link">About</Link>
+            <Link to="/service" className="nav-item nav-link">Services</Link>
+            <Link to="/event" className="nav-item nav-link">Events</Link>
+            <Link to="/menu" className="nav-item nav-link">Menu</Link>
+            <Link to="/contact" className="nav-item nav-link">Contact</Link>
 
             <div className="relative">
               <button
@@ -85,22 +83,21 @@ const Navbar = () => {
               </button>
               {dropdownOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-10">
-                  <a href="book.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Booking</a>
-                  <a href="blog.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Our Blog</a>
-                  <a href="team.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Our Team</a>
-                  <a href="testimonial.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Testimonial</a>
-                  <a href="404.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">404 Page</a>
+                  <Link to="/book" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Booking</Link>
+                  <Link to="/blog" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Our Blog</Link>
+                  <Link to="/team" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Our Team</Link>
+                  <Link to="/testimonial" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Testimonial</Link>
+                  <Link to="/404" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">404 Page</Link>
                 </div>
               )}
             </div>
           </div>
 
-         
           <div className="hidden md:flex items-center space-x-4">
             <button className="text-black bg-[#d4a762] h-12 w-12 rounded-full ">
               <FontAwesomeIcon icon={faSearch} />
             </button>
-            <a href="book.html" className="text-lg py-3 px-4 rounded-full bg-primary text-black bg-[#d4a762]">Book Now</a>
+            <Link to="/book" className="text-lg py-3 px-4 rounded-full bg-primary text-black bg-[#d4a762]">Book Now</Link>
           </div>
         </nav>
       </div>
@@ -108,4 +105,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar; 
