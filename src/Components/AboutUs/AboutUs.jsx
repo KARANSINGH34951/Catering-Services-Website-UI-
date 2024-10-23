@@ -77,7 +77,7 @@ const AboutUs = () => {
         </ul>
 
         <div>
-          <button className='rounded-full px-10 py-4 bg-slate-300 my-6'>
+          <button className='rounded-full px-10 py-4 bg-[#d4a762] my-6'>
              About Us 🡺
           </button>
         </div>
